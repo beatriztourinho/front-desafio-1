@@ -162,8 +162,9 @@ body {
 }
 
 .input-name input, .input-email input, .input-comment input {
-    border: #929292 solid 1px;
+    border: #e5e5e5 solid 1px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
 }
 
 .input-name input:hover, .input-email input:hover, .input-comment input:hover {
@@ -224,6 +225,10 @@ body {
      border-left: #FE0078 solid 2px;
      padding: 0.7rem;
  }
+
+ .categorias a {
+    text-decoration: none;
+}
 
  .item-categorias {
      display: flex;

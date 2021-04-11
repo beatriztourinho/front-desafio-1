@@ -166,6 +166,10 @@ body {
      padding: 0.7rem;
  }
 
+.categorias a {
+     text-decoration: none;
+ }
+
  .item-categorias {
      display: flex;
      justify-content: space-between;

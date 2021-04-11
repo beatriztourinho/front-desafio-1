@@ -85,7 +85,7 @@ body {
     color: #929292; 
 }
 
-.post p {
+.post-text {
     position: relative;
     top: -1.5rem;
     margin-left: 1.5rem;
@@ -93,27 +93,8 @@ body {
     color: #545454;
 }
 
-.post a {
-    align-self: flex-end;
-    margin-right: 1.5rem;
-    position: relative;
-    top: -1.5rem;
-}
-
-.post button{
-    border: 1px solid #FE0078;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    padding: 0.8rem;
-    color: #545454;
-    background-color: white;
-    width: 9.6rem;
-    cursor:pointer;
-}
-
-.post button:hover {
-    background-color: #FE0078;
-    color: white;
+.post-text span {
+    font-style: italic;
 }
 
 .menu {
@@ -150,10 +131,10 @@ body {
      left: 1rem;
  }
 
- .post button:focus, .menu input:focus {
-     outline:0;
-     border: #FE0078 solid 1px;
- }
+ .menu input:focus {
+    outline:0;
+    border: #FE0078 solid 1px;
+}
 
  .categorias {
      position: relative;
@@ -219,5 +200,3 @@ body {
     height: 4.5rem;
     color: white;
 }
-
-

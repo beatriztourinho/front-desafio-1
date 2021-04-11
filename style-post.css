@@ -12,8 +12,8 @@ body {
 .header {
     display:flex;
     justify-content: space-between;
-    width:100vw;
-    height: 6rem;
+    min-width:100vw;
+    min-height: 6rem;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -95,6 +95,84 @@ body {
 
 .post-text span {
     font-style: italic;
+}
+
+.comments {
+    display:grid;
+    grid-template-areas: 
+    "title ."
+    "name email"
+    "comment comment"
+    ". button";
+    max-width: 45.5rem;
+}
+
+.comments h1 {
+    grid-area: title;
+    font-size: 1.5rem;
+}
+
+.input-name {
+    grid-area: name;
+}
+
+.input-email {
+    grid-area: email;
+    margin-left: 2rem;
+}
+
+.input-comment {
+    grid-area: comment;
+}
+
+.comment-button {
+    grid-area: button;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.input-name p, .input-email p, .input-comment p {
+    font-size: 0.9rem;
+}
+
+.comment-button button {
+    border: 1px solid #FE0078;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    color: white;
+    background-color: #FE0078;
+    width: 9.6rem;
+    cursor:pointer;
+    margin-top: 2rem;
+}
+
+.comment-button button:focus {
+    outline: none;
+}
+
+.input-name input, .input-email input {
+    height: 2rem;
+    width: 21.2rem;
+}
+
+.input-comment input {
+    height: 11rem;
+    width: 45.5rem;
+}
+
+.input-name input, .input-email input, .input-comment input {
+    border: #929292 solid 1px;
+    border-radius: 5px;
+}
+
+.input-name input:hover, .input-email input:hover, .input-comment input:hover {
+    border: #FE0078 solid 1px;
+    cursor: pointer;
+}
+
+.input-name input:focus, .input-email input:focus, .input-comment input:focus {
+    outline: none;
 }
 
 .menu {
@@ -196,7 +274,7 @@ body {
     position: relative;
     top: 14rem;
     left: -0.5rem;
-    width: 100vw;
-    height: 4.5rem;
+    min-width:100vw;
+    min-height: 5rem;
     color: white;
 }

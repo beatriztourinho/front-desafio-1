@@ -12,8 +12,8 @@ body {
 .header {
     display:flex;
     justify-content: space-between;
-    width:100vw;
-    height: 6rem;
+    min-width:100vw;
+    min-height: 6rem;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -139,11 +139,11 @@ body {
     cursor: pointer;
 }
 
-.menu input:hover{
+.menu .form input:hover{
     border: 1px solid #FE0078; 
 }
 
- .menu input::placeholder {
+ .menu .form input::placeholder {
      color: #545454;
      font-size: 0.9rem;
      position:relative;
@@ -215,8 +215,8 @@ body {
     position: relative;
     top: 14rem;
     left: -0.5rem;
-    width: 100vw;
-    height: 4.5rem;
+    min-width:100vw;
+    min-height: 5rem;
     color: white;
 }
 
